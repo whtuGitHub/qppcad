@@ -12,7 +12,7 @@ namespace py = pybind11;
 
 #endif
 
-namespace qpp::cad {
+namespace qpp{ namespace cad {
   class app_state_t;
 
   class console_widget_t {
@@ -36,5 +36,5 @@ namespace qpp::cad {
   };
 
 }
-
+}
 #endif

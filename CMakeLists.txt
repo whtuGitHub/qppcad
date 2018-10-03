@@ -1,12 +1,14 @@
 cmake_minimum_required (VERSION 3.2)
 project(qppcad CXX C)
-add_definitions(-O3 -fPIC -DFMT_HEADER_ONLY)
+add_definitions(-O3 -fPIC -DFMT_HEADER_ONLY -DCXX_OLD)
 set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -fno-omit-frame-pointer")
 set(CMAKE_BUILD_TYPE "Debug")
 #set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
 #set (CMAKE_LINKER_FLAGS_DEBUG "${CMAKE_LINKER_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
 
 set(CMAKE_CXX_STANDARD 17)
+set(CXX_STADARD_REQUIRED ON)
+#set_property(TARGET CMakeFiles/qppcad.dir/src/qppcad/main.cpp.o PROPERTY CXX_STANDARD 17)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 macro(set_option option value)
@@ -80,6 +82,8 @@ add_executable(qppcad
     deps/imgui/imgui.cpp
     deps/imgui/imgui_widgets.cpp
     deps/imgui/imgui_draw.cpp)
+#set_property(TARGET CMakeFiles/qppcad.dir/src/qppcad/main.cpp.o PROPERTY CXX_STANDARD 17)
+
 if(PYTHON_BINDINGS)
 add_definitions(-DPYTHON_CONSOLE)
 target_link_libraries(qppcad qpp ${glfw_LIBRARIES} ${GL_LIBRARY}

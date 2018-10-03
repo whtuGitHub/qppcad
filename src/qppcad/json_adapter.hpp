@@ -4,7 +4,7 @@
 #include <fifo_map.hpp>
 #include <nlohmann/json.hpp>
 
-namespace qpp::cad{
+namespace qpp{ namespace cad {
   template<class K, class V, class dummy_compare, class A>
   using workaround_fifo_map = nlohmann::fifo_map<K, V, nlohmann::fifo_map_compare<K>, A>;
 
@@ -37,6 +37,6 @@ namespace qpp::cad{
   const auto JSON_BONDING_TABLE  = "bonding_table";
   const auto JSON_ATOMS          = "atoms";
   const auto JSON_CELL           = "cell";
-
+}
 }
 #endif

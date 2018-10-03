@@ -6,7 +6,9 @@
 #include <GLFW/glfw3.h>
 #include <geom/lace3d.hpp>
 
-namespace qpp::cad{
+
+namespace qpp{
+namespace cad {
 
   ///
   /// \brief The mesh_rt enum
@@ -60,5 +62,5 @@ namespace qpp::cad{
     for (uint8_t i = 0; i < 3; i++) invec.push_back(_v(i));
   }
 
-}
+} }
 #endif

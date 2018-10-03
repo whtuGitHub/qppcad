@@ -12,7 +12,7 @@
 #include <qppcad/imgui_addons.hpp>
 #include <qppcad/console.hpp>
 
-namespace qpp::cad{
+namespace qpp{ namespace cad {
   class app_state_t;
 
   class ui_manager_t{
@@ -40,5 +40,5 @@ namespace qpp::cad{
     void render_mtable_big();
   };
 }
-
+}
 #endif

@@ -6,7 +6,7 @@
 #include <Eigen/Eigen>
 #include <geom/lace3d.hpp>
 
-namespace qpp::cad {
+namespace qpp{ namespace cad {
 
   class draw_pipeline_t{
   public:
@@ -210,5 +210,6 @@ namespace qpp::cad {
     void render_screen_quad();
   };
 
+}
 }
 #endif

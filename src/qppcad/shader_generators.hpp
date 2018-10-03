@@ -4,7 +4,7 @@
 #include <qppcad/qppcad.hpp>
 #include <qppcad/shader_program.hpp>
 
-namespace qpp::cad {
+namespace qpp{ namespace cad {
   class shader_generators {
     public:
       /// Default shader testing program - Gourand shading
@@ -117,5 +117,5 @@ namespace qpp::cad {
       }
   };
 }
-
+}
 #endif

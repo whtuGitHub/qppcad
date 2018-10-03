@@ -13,7 +13,7 @@
 #include <imgui_internal.h>
 #include <imgui_stl.h>
 
-namespace qpp::cad{
+namespace qpp{ namespace cad {
 
   class workspace_t;
   class ws_item_t;
@@ -108,5 +108,5 @@ namespace qpp::cad{
       static shared_ptr<ws_item_t> create_object(const string &obj_type);
   };
 }
-
+}
 #endif

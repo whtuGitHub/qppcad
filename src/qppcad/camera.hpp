@@ -3,7 +3,7 @@
 #include <geom/lace3d.hpp>
 #include <qppcad/gl_math.hpp>
 
-namespace qpp::cad{
+namespace qpp{ namespace cad {
   enum app_camera_proj_type {
     CAMERA_PROJ_ORTHO,
     CAMERA_PROJ_PERSP
@@ -67,5 +67,5 @@ namespace qpp::cad{
     vector3<float> unproject(const float x, const float y);
   };
 }
-
+}
 #endif

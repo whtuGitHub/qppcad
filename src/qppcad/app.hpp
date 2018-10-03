@@ -8,7 +8,7 @@
 #include <qppcad/gl_math.hpp>
 
 
-namespace qpp::cad{
+namespace qpp{ namespace cad {
   class c_app{
 
   private:
@@ -55,5 +55,6 @@ namespace qpp::cad{
       return *app_state;
     }
   };
+}
 }
 #endif

@@ -2,7 +2,7 @@
 #define QPPCAD_WS_ATOMS_LIST_CONTEXT_MENU
 #include <qppcad/ws_atoms_list.hpp>
 
-namespace qpp::cad {
+namespace qpp{ namespace cad {
   struct ws_atoms_list_context_menu_helper {
       static void render_item_edit_menu(ws_atoms_list_t *al){
 
@@ -92,5 +92,5 @@ namespace qpp::cad {
       }
   };
 }
-
+}
 #endif

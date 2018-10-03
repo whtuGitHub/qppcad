@@ -10,7 +10,7 @@
 #include <imgui_stl.h>
 #include <qppcad/json_adapter.hpp>
 
-namespace qpp::cad{
+namespace qpp{ namespace cad {
 
   class workspace_t;
   class app_state_t;
@@ -191,5 +191,5 @@ namespace qpp::cad{
   };
 
 }
-
+}
 #endif

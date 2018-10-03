@@ -1,7 +1,7 @@
 #include <qppcad/uniq_id.hpp>
 #include <qppcad/app.hpp>
 
-namespace qpp::cad{
+namespace qpp{ namespace cad {
 
   static uint32_t uniq_id_storage = 0;
 
@@ -11,4 +11,5 @@ namespace qpp::cad{
     return uniq_id_storage;
   }
 
+}
 }

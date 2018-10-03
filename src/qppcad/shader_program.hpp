@@ -5,7 +5,7 @@
 #include <GL/gl3w.h>
 #include <GLFW/glfw3.h>
 
-namespace qpp::cad {
+namespace qpp{ namespace cad {
 
   ///
   /// \brief Uniform fixed name
@@ -148,6 +148,7 @@ namespace qpp::cad {
   };
 
 
+}
 }
 #endif
 

@@ -6,7 +6,7 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wformat-secutity"
 
-namespace qpp::cad {
+namespace qpp{ namespace cad {
   struct ws_atoms_list_obj_insp_helper {
       static void render_ui(ws_atoms_list_t *al){
         if (ImGui::CollapsingHeader("Summary")){
@@ -303,6 +303,7 @@ namespace qpp::cad {
         //    }
       }
   };
+}
 }
 #pragma clang diagnostic pop
 #endif

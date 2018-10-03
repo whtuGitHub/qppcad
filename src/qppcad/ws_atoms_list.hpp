@@ -15,7 +15,7 @@
 #include <qppcad/file_formats.hpp>
 
 
-namespace qpp::cad {
+namespace qpp{ namespace cad {
 
   ///
   /// \brief The ws_atom_list_t class
@@ -139,5 +139,5 @@ namespace qpp::cad {
   };
 
 }
-
+}
 #endif
